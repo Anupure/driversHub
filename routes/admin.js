@@ -20,19 +20,19 @@ adminRouter.post('/course', (req,res)=> {
     })
 })
 
-adminRouter.put('/course', (req,res)=> {
+adminRouter.put('/', (req,res)=> {
     res.json({
         Message: "Admin modify course"
     })
 })
 
-adminRouter.delete('/course', (req,res)=> {
+adminRouter.delete('/', (req,res)=> {
     res.json({
         Message: "Admin Signup"
     })
 })
 
-adminRouter.get('/course/bulk', (req,res)=> {
+adminRouter.get('/bulk', (req,res)=> {
     res.json({
         Message: "Admin Signup"
     })
