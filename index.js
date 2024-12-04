@@ -1,24 +1,13 @@
-import express from 'express';
+const express = require("express");
+const {userRouter} = require('./routes/user')
+const {courseRouter} = require('./routes/course');
 
 const app = express();
 
-
 app.use(express.json());
 
+app.use('/api/v1/user', userRouter);
+app.use('api/v1/course', courseRouter)
 
 
-app.post('/api/v1/user/signup', (req, res) => {
-});
-
-app.post('/api/v1/user/signin', (req, res) => {
-});
-app.get('/api/v1/user/courses', (req, res) => {
-});
-app.get('/api/v1/courses', (req, res) => {
-});
-
-
-
-
-
-app.listen(env.PORT || 5000)
+app.listen(5000)
