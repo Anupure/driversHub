@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { string, number } = require("zod");
+const { string, number, boolean } = require("zod");
 const Schema = mongoose.Schema;
 const ObjectId = mongoose.Types.ObjectId;
 
