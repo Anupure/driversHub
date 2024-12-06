@@ -1,16 +1,21 @@
+require('dotenv').config()
+
 const express = require("express");
+
 const {userRouter} = require('./routes/user')
 const {courseRouter} = require('./routes/course');
 const {adminRouter} = require('./routes/admin');
+
 const mongoose = require('mongoose');
 const axios = require('axios');
 const cron = require('node-cron');
+
 const Player = require('./truckersMPModels/player');
-const Ban = require('./trackersMPModels/ban');
-const Server = require('./truckersMPModels/Server');
-const Event = require('./truckersMPModels/event');
-const Vtc = require('./truckersMPModels/vtc');
-const GameTime = require('./truckersMPModels/gameTime')
+// const Ban = require('./truckersMPModels/Ban');
+// const Server = require('./truckersMPModels/Server');
+// const Event = require('./truckersMPModels/event');
+// const Vtc = require('./truckersMPModels/vtc');
+// const GameTime = require('./truckersMPModels/gameTime')
 
 
 const app = express();
